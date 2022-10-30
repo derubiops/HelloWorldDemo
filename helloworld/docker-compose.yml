@@ -1,0 +1,12 @@
+services:
+  reverseproxy:
+    image: docker_nginx
+    ports:
+      - 8080:80
+    restart: always
+
+  app:
+    depends_on:
+      - reverseproxy
+    image: hello_world
+    restart: always
