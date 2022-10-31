@@ -11,6 +11,8 @@ The app itself, a simple Python app to return the "hello world" sentence in json
 
 The solution has been written in Python, using Flask as a webserver, because it is a lightweight server that can asily executed on a Docker image. Also, Python provides greate readability.
 
+As requested, the solution can be started with a single command, in this case is __docker-compose up -d__.
+
 
 ### Pre-requisites
 
@@ -91,7 +93,7 @@ __Note__: you only need to install Python locally if you want to execute the app
    </html>
   ```
   
-  This output is normal, as nginx is redirecting port 80 to 443. Try curl again with -kL modifiers:
+  This output is normal, as nginx is redirecting port 80 to 443. Try curl again with -Lk modifiers:
   ```
   curl -Lk http://localhost/hello
   {"hello":"world"}
