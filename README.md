@@ -100,4 +100,8 @@ __Note__: you only need to install Python locally if you want to execute the app
   
   Now, open a browser and navigate to http://localhost/hello to see the redirecttion from HTTP to HTTPS working. Expect to have the certificate warning due the certificate. To void this warning, you can install it locally.
   
+  Once done, you can safely stop the containers:
+  ```
+  docker-compose down
+  ```
   
