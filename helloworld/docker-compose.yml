@@ -1,12 +1,20 @@
 services:
-  reverseproxy:
-    image: docker_nginx
+  nginx:
+    image: nginx:latest
+    container_name: nginx
     ports:
-      - 8080:80
+      - "80:80"
     restart: always
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - app
+    links:
+      - app
 
   app:
-    depends_on:
-      - reverseproxy
     image: hello_world
+    container_name: app
     restart: always
+    ports:
+      - "8080:8080"

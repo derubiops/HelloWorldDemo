@@ -14,10 +14,10 @@ The app itself, a simple Python app to return the "hello world" sentence in json
 
 For local development, the following software has been used:
 
-Python 3.9
-Flask 2.2.2
-Docker Desktop 20.20 (client)
-Docker Desktop 20.20 (server)
-Minikube
+- Python 3.9
+- Flask 2.2.2
+- Docker Desktop 20.20 (client)
+- Docker Desktop 20.20 (server)
+- Minikube
 
 ### Building the images
