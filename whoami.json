@@ -1,0 +1,25 @@
+{
+  "Name": "Javier",
+  "Surname": "García",
+  "Gender": "Male",
+  "CityOfResidence": "Barcelona",
+  "State": "Catalonia, Spain",
+  "Email": "javier.garcia.jaime@outlook.com",
+  "Addresses": {
+    "AddressLine1": "C/ Gran de la Sagrera 184",
+    "AddressLine2": "5-1",
+    "AddressLine3": "Barcelona"
+  },
+  "Hobbies": {
+    "Hobbie1": "Music",
+    "Hobbie2": "Photography",
+    "Hobbie3": "Technology",
+    "Hobbie4": "Bikes"
+  },
+  "Languages": {
+    "Languages1": "Spanish",
+    "Languages2": "Catalan",
+    "Languages3": "English"
+  },
+  "KeenToLearn": true
+}
