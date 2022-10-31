@@ -2,7 +2,7 @@
 
 - How long did it take to finish the test?
 
-  - I needed around 4 hours along two days.
+  - I needed around 5-6 hours along two days. Creating documentation with care is always time consuming :)
 
 - If you had more time, how could you improve your solution?
 
@@ -22,4 +22,4 @@
 
 - What was the most challenging part and why?
 
-  - I got stuck for some time configuring the nginx as a reverse proxy, as this is something that I do not do on a daily basis and I needed some learning and practice until I got it working.
+  - I got stuck for some time configuring the nginx as a reverse proxy, as this is something that I do not do on a daily basis and I needed some learning and practice until I got it working. However, the SSL part was pretty straightforward.
