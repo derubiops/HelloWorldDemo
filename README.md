@@ -1,13 +1,16 @@
 # Introduction to the HelloWorldDemo repository
 
-Testing a multicontainer Hello World app with Nginx reverse proxy and SSL certificate.
+Testing a multicontainer Hello World app with Nginx reverse proxy and SSL self-signed certificate.
 
 
 ## About this application
 
-The application is based in two microservices running on Docker.
+The application is based in two microservices running on Docker and wrapped with Docker Compose.
 
-The app itself, a simple Python app to return the "hello world" sentence in json format and a reverse proxy that will serve the content of the app on port 443. If the application is requested on port 80, nginx will redirect to port 443.
+The app itself, a simple Python app to return the "hello world" sentence in json format and a reverse proxy that will serve the content of the app on port 443. If the application is requested on port 80, nginx will redirect it to port 443.
+
+The solution has been written in Python, using Flask as a webserver, because it is a lightweight server that can asily executed on a Docker image. Also, Python provides greate readability.
+
 
 ### Pre-requisites
 
@@ -18,6 +21,8 @@ For local development, the following software has been used. This deployment has
 - Docker Compose (already shipped with Docker Desktop)
 
 __Note__: you only need to install Python locally if you want to execute the application "as is" directly with Python commands. Otherwise, only Docker Destktop is needed.
+
+
 ### Building the images
 
 - __Hello World App__
@@ -93,6 +98,6 @@ __Note__: you only need to install Python locally if you want to execute the app
   ```
   Explanation: with "-L" curl will follow the redirection from port 80 to 443 and "-k" will disregard the certificate validation, as in this case is a self-signed certificate.
   
-  
+  Now, open a browser and navigate to http://localhost/hello to see the redirecttion from HTTP to HTTPS working. Expect to have the certificate warning due the certificate. To void this warning, you can install it locally.
   
   
